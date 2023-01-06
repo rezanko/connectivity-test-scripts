@@ -33,3 +33,7 @@ This is a script to test list of IPs and Ports connectivity/reachability from an
 3. There are 2 .sh scripts that can be used:
     1. If the purpose is just to test, then execute the `test-conn.sh`
     2. If You want to test and store the result to S3 Bucket (specified in the "/conntest/bucketname" & "/conntest/bucketpath"), then execute the `test-conn-and-put-to-s3.sh`
+
+
+## Automate / Schedule the Script to Run Periodically
+You can use `AWS Eventbridge` to schedule the script executions periodically, and set the target to `System Manager Run Command` with `AWS-RunShellScript`.
