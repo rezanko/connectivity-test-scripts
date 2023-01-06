@@ -36,4 +36,4 @@ This is a script to test list of IPs and Ports connectivity/reachability from an
 
 
 ## Automate / Schedule the Script to Run Periodically
-You can use `AWS Eventbridge` to schedule the script executions periodically, and set the target to `System Manager Run Command` with `AWS-RunShellScript`.
+You can use `AWS Eventbridge` to schedule the script executions periodically, and set the target to `System Manager Run Command` with `AWS-RunShellScript` pointing to the EC2 Instance and the path where the script is stored inside the instance.
