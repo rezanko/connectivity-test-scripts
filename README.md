@@ -1,6 +1,6 @@
 # connectivity-test-scripts
 ## Description
-This is a script to test list of IPs and Ports connectivity/reachability from an EC2 instance perspective. The test result can be used to determine if the route from the EC2 instance that is used for testing to the destination is already established (success in the traceroute) and also to check the destination IP & Port is already opened in firewall (the status will show as `Open` or `Closed`) or still blocked by the firewall (the status will show as `Filtered`)
+This is a script to test list of IPs and Ports connectivity/reachability from an EC2 instance perspective. The test result can be used to determine if the route from the EC2 instance (that is used for testing) to the destination IPs are already established (success in the traceroute) and also to check the destination IPs & Ports are already opened in firewall (the status will be shown as `Open` or `Closed`) or still blocked by the firewall (the status will be shown as `Filtered`)
 
 ## Prerequisites:
 1. EC2 instance with Linux Operating System
